@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .header {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .word-container {
+      margin-bottom: 20px;
+    }
+
+    .word {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .speaker-button {
+      border: none;
+      background-color: #3498db;
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .speaker-button:hover {
+      background-color: #6e20c1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    Learn The Words
+  </div>
+
+  <div class="word-container">
+    <span class="word">Hello:</span> A common greeting or expression of goodwill.
+    <button class="speaker-button" onclick="speak('Hello')">🔊</button>
+  </div>
+  
+  <div class="word-container">
+    <span class="word">World:</span> The earth and all people and things on it.
+    <button class="speaker-button" onclick="speak('World')">🔊</button>
+  </div>
+
+  <div class="word-container">
+    <span class="word">Goodbye:</span> An expression of farewell or parting.
+    <button class="speaker-button" onclick="speak('Goodbye')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Love:</span> A deep affection or attachment for someone or something.
+    <button class="speaker-button" onclick="speak('Love')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Cat:</span> A small domesticated carnivorous mammal.
+    <button class="speaker-button" onclick="speak('Cat')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Dog:</span> A domesticated carnivorous mammal.
+    <button class="speaker-button" onclick="speak('Dog')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Computer:</span> An electronic device for processing and storing data.
+    <button class="speaker-button" onclick="speak('Computer')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Internet:</span> The global computer network providing a variety of information and communication facilities.
+    <button class="speaker-button" onclick="speak('Internet')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Friend:</span> A person with whom one has a bond of mutual affection.
+    <button class="speaker-button" onclick="speak('Friend')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Happiness:</span> The state of being happy.
+    <button class="speaker-button" onclick="speak('Happiness')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Book:</span> A written or printed work consisting of pages glued or sewn together along one side.
+    <button class="speaker-button" onclick="speak('Book')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Education:</span> The process of receiving or giving systematic instruction.
+    <button class="speaker-button" onclick="speak('Education')">🔊</button>
+</div>
+<div class="word-container">
+    <span class="word">Elephant:</span> A large herbivorous mammal known for its long trunk.
+    <button class="speaker-button" onclick="speak('Elephant')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Sun:</span> The star at the center of our solar system.
+    <button class="speaker-button" onclick="speak('Sun')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Moon:</span> The natural satellite of the Earth.
+    <button class="speaker-button" onclick="speak('Moon')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Tree:</span> A woody perennial plant typically with a single main stem.
+    <button class="speaker-button" onclick="speak('Tree')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Ocean:</span> A vast body of saltwater covering a large portion of the Earth's surface.
+    <button class="speaker-button" onclick="speak('Ocean')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Mountain:</span> A large landform that rises prominently above its surroundings.
+    <button class="speaker-button" onclick="speak('Mountain')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Flower:</span> The reproductive structure found in flowering plants.
+    <button class="speaker-button" onclick="speak('Flower')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">Rain:</span> Water falling in drops from the atmosphere.
+    <button class="speaker-button" onclick="speak('Rain')">🔊</button>
+</div>
+
+<div class="word-container">
+    <span class="word">House:</span> A building for human habitation.
+    <button class="speaker-button" onclick="speak('House')">🔊</button>
+</div>
+
+  <script>
+    function speak(word) {
+      const utterance = new SpeechSynthesisUtterance(word);
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
