@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Image in a Div</title>
+</head>
+<body>
+
+<div id="randomImageDiv">
+  <img id="randomImage" src="" alt="Random Image">
+  <button onclick="setRandomImage()">Change Image</button>
+</div>
+
+<script>
+  const imageUrls = [
+    'image.jpg',
+    'image2.jpg',
+    'image3.jpg',
+    // Add more image URLs as needed
+  ];
+
+  function getRandomImageUrl() {
+    const randomIndex = Math.floor(Math.random() * imageUrls.length);
+    return imageUrls[randomIndex];
+  }
+
+  function setRandomImage() {
+    const randomImageDiv = document.getElementById('randomImageDiv');
+    const randomImage = document.getElementById('randomImage');
+    const randomImageUrl = getRandomImageUrl();
+    
+    // Set the image source
+    randomImage.src = randomImageUrl;
+    randomImage.alt = 'Random Image';
+
+    // Optionally, you can also set other attributes or styles if needed
+    // For example:
+    randomImage.style.width = '200px';
+    randomImage.style.height = '200px';
+  }
+
+  // Initial call to set a random image when the page loads
+  setRandomImage();
+</script>
+
+</body>
+</html>
