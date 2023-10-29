@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMES</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#wrapper{
+  background-color: rgb(203, 223, 222);
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh   ;
+}
+#container{
+  height: 100%;
+  max-width: 1200px; 
+  margin:0 auto;
+  padding: 20px;
+  text-align: center;
+}a
+h1{ font-family: 'Tilt Prism', Arial, Helvetica, sans-serif;
+  margin: 20px 0;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  text-align: center;
+}
+#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  width: 32%;
+  position: relative;
+  margin-bottom:20px ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card img{
+  width: 100%;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+}
+.card:hover{
+  transform: scale(1.03);
+  transition: 0.3s;
+  filter: drop-shadow(0 0 10px #333);
+
+}
+.card:hover img{
+  filter: grayscale(0%);
+}
+.card figcaption{
+  position: absolute;
+  color: black; 
+  font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-shadow: 2px #333;
+  margin: 6px;
+  width: 100%;
+  height: 10%;
+  opacity: 0;
+  left:0;
+  bottom:0;
+  font-weight:bold;
+  border-radius:0 0 10px 10px ;
+  background: linear-gradient(0deg,rgb(0,0,0,0.5) 0%, rgb(255,255,255,0) 100%);
+}
+.card:hover figcaption{
+  opacity: 1;
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+    </style>
+    <div id="wrapper">
+        <div id="container">
+            <h1>Games</h1>
+            <div id="gallery">
+                <figure class="card">
+                    <a href ="colourgame/home.html">
+                    <img src="images/images.jpeg" alt="img1">
+                    <figcaption>COLOR GAME</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="card">
+                <a href="https://sanskarsinghh.github.io/SG2.0/" >
+                    <img src="images/unscranble.avif" alt="img2">
+                    <figcaption>UNSRAMBLE</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                <a href="Speak/speak.html">
+                    <img src="images/download.png" alt="img3">
+                    <figcaption>LEARN WORDS</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                <a href="https://aipronunciationtr.com/">
+                    <img src="images/ai_prac.jpeg" alt="img4">
+                    <figcaption>AI TRAINER</figcaption>
+                </a>
+                </figure>
+                <figure class="card">
+                <a href="jigsaw/index.html">
+                    <img src="images/jigsaw.jpg" alt="img5">
+                    <figcaption>JIGSAW PUZZLE</figcaption>
+                    </a>
+                </figure>
+                <figure class="card">
+                <a href="quiz-main/quiz.html">
+                    <img src="images/use_wa.jpeg" alt="img5">
+                    <figcaption>MAIN QUIZ</figcaption>
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
